@@ -1,6 +1,4 @@
-ARG ALPINE_VERSION=3.13
-
-FROM alpine:${ALPINE_VERSION}
+FROM ghcr.io/jochenvg/alpine:master
 RUN apk add --no-cache \
     dnsmasq
 ENTRYPOINT [ "dnsmasq", "-d" ]
